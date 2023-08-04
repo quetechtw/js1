@@ -1,2 +1,5 @@
 alert("test 456");
-console.log("Hello World!!!");
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+
