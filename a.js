@@ -6,10 +6,11 @@ function myFunction() {
     step = 20; /* step size */
 
     let fahr = lower;
+//    document.getElementById("demo").innerHTML = "";
     while (fahr <= upper) {
         let celius = (fahr - 32) / 9 * 5;
-        document.getElementById("demo").innerHTML =
-	    fahr + "F '=\" " + celius + "C";
+        document.getElementById("demo").innerHTML +=
+	    "<br/>" + fahr + "F = " + celius.toFixed(2) + "C";
         fahr = fahr + step;
     }
 }
